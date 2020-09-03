@@ -8,10 +8,10 @@
 
 import UIKit
 
-final class MainViewController: BaseViewController {
+final class ServicesViewController: BaseViewController {
 
     private var homepageData = HomePageData()
-    private var viewModel = MainViewModel()
+    private var viewModel = ServicesViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ final class MainViewController: BaseViewController {
 }
 
 //MARK: - View Configuration
-extension MainViewController {
+extension ServicesViewController {
     
     private func configureView() {
         viewModel.stateChangeHandler = { [weak self] change in
@@ -37,9 +37,9 @@ extension MainViewController {
 }
 
 // MARK: - State Change Handling
-private extension MainViewController {
+private extension ServicesViewController {
 
-    func apply(change: MainViewModel.Change) {
+    func apply(change: ServicesViewModel.Change) {
         switch change {
         case .reloadServices(homepageData: let homepageData):
             self.reloadHomepageData(data: homepageData)

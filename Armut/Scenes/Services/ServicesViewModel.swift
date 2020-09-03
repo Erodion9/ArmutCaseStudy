@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class MainViewModel: BaseViewModel {
+final class ServicesViewModel: BaseViewModel {
     
     private enum Constants {
         static let homepageRequestURL = "https://my-json-server.typicode.com/engincancan/case/home"

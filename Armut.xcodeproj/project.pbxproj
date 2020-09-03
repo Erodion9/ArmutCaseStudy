@@ -10,7 +10,7 @@
 		4050614D25015DC5004BDDBA /* HomePageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050614C25015DC5004BDDBA /* HomePageData.swift */; };
 		40847925250147860084260D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847924250147860084260D /* AppDelegate.swift */; };
 		40847927250147860084260D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847926250147860084260D /* SceneDelegate.swift */; };
-		40847929250147860084260D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847928250147860084260D /* MainViewController.swift */; };
+		40847929250147860084260D /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847928250147860084260D /* ServicesViewController.swift */; };
 		4084792C250147860084260D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4084792A250147860084260D /* Main.storyboard */; };
 		4084792E250147870084260D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4084792D250147870084260D /* Assets.xcassets */; };
 		40847931250147870084260D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4084792F250147870084260D /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 		4084793C250148130084260D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084793B250148130084260D /* BaseViewModel.swift */; };
 		40847942250149C50084260D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847941250149C50084260D /* Service.swift */; };
 		4084794425014C090084260D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084794325014C090084260D /* Post.swift */; };
-		4084794625014FA70084260D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084794525014FA70084260D /* MainViewModel.swift */; };
+		4084794625014FA70084260D /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084794525014FA70084260D /* ServicesViewModel.swift */; };
 		4084794825014FE70084260D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084794725014FE70084260D /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		40847921250147860084260D /* Armut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Armut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40847924250147860084260D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40847926250147860084260D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40847928250147860084260D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		40847928250147860084260D /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		4084792B250147860084260D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4084792D250147870084260D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40847930250147870084260D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		4084793B250148130084260D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		40847941250149C50084260D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4084794325014C090084260D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		4084794525014FA70084260D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4084794525014FA70084260D /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
 		4084794725014FE70084260D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,19 +94,19 @@
 		4084793E250148A10084260D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				4084793F250148AD0084260D /* Main */,
+				4084792A250147860084260D /* Main.storyboard */,
+				4084793F250148AD0084260D /* Services */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		4084793F250148AD0084260D /* Main */ = {
+		4084793F250148AD0084260D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				40847928250147860084260D /* MainViewController.swift */,
-				4084792A250147860084260D /* Main.storyboard */,
-				4084794525014FA70084260D /* MainViewModel.swift */,
+				40847928250147860084260D /* ServicesViewController.swift */,
+				4084794525014FA70084260D /* ServicesViewModel.swift */,
 			);
-			path = Main;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		40847940250149BA0084260D /* Model */ = {
@@ -192,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4084794825014FE70084260D /* NetworkManager.swift in Sources */,
-				40847929250147860084260D /* MainViewController.swift in Sources */,
+				40847929250147860084260D /* ServicesViewController.swift in Sources */,
 				4084793C250148130084260D /* BaseViewModel.swift in Sources */,
 				4084793A250148090084260D /* BaseViewController.swift in Sources */,
 				40847925250147860084260D /* AppDelegate.swift in Sources */,
@@ -200,7 +200,7 @@
 				40847927250147860084260D /* SceneDelegate.swift in Sources */,
 				4084794425014C090084260D /* Post.swift in Sources */,
 				40847942250149C50084260D /* Service.swift in Sources */,
-				4084794625014FA70084260D /* MainViewModel.swift in Sources */,
+				4084794625014FA70084260D /* ServicesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
