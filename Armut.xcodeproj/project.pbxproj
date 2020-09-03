@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4050614D25015DC5004BDDBA /* HomePageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050614C25015DC5004BDDBA /* HomePageData.swift */; };
 		40847925250147860084260D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847924250147860084260D /* AppDelegate.swift */; };
 		40847927250147860084260D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847926250147860084260D /* SceneDelegate.swift */; };
 		40847929250147860084260D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847928250147860084260D /* MainViewController.swift */; };
@@ -17,9 +18,12 @@
 		4084793C250148130084260D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084793B250148130084260D /* BaseViewModel.swift */; };
 		40847942250149C50084260D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847941250149C50084260D /* Service.swift */; };
 		4084794425014C090084260D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084794325014C090084260D /* Post.swift */; };
+		4084794625014FA70084260D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084794525014FA70084260D /* MainViewModel.swift */; };
+		4084794825014FE70084260D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084794725014FE70084260D /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4050614C25015DC5004BDDBA /* HomePageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageData.swift; sourceTree = "<group>"; };
 		40847921250147860084260D /* Armut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Armut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40847924250147860084260D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40847926250147860084260D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		4084793B250148130084260D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		40847941250149C50084260D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4084794325014C090084260D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4084794525014FA70084260D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4084794725014FE70084260D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 			children = (
 				40847928250147860084260D /* MainViewController.swift */,
 				4084792A250147860084260D /* Main.storyboard */,
+				4084794525014FA70084260D /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -107,6 +114,8 @@
 			children = (
 				40847941250149C50084260D /* Service.swift */,
 				4084794325014C090084260D /* Post.swift */,
+				4084794725014FE70084260D /* NetworkManager.swift */,
+				4050614C25015DC5004BDDBA /* HomePageData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,13 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4084794825014FE70084260D /* NetworkManager.swift in Sources */,
 				40847929250147860084260D /* MainViewController.swift in Sources */,
 				4084793C250148130084260D /* BaseViewModel.swift in Sources */,
 				4084793A250148090084260D /* BaseViewController.swift in Sources */,
 				40847925250147860084260D /* AppDelegate.swift in Sources */,
+				4050614D25015DC5004BDDBA /* HomePageData.swift in Sources */,
 				40847927250147860084260D /* SceneDelegate.swift in Sources */,
 				4084794425014C090084260D /* Post.swift in Sources */,
 				40847942250149C50084260D /* Service.swift in Sources */,
+				4084794625014FA70084260D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
