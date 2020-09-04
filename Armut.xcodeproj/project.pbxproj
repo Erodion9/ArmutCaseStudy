@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403D691B2502829E00A8A63D /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D691A2502829E00A8A63D /* Displayable.swift */; };
 		4050614D25015DC5004BDDBA /* HomePageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050614C25015DC5004BDDBA /* HomePageData.swift */; };
 		40847925250147860084260D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847924250147860084260D /* AppDelegate.swift */; };
 		40847927250147860084260D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847926250147860084260D /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		403D691A2502829E00A8A63D /* Displayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
 		4050614C25015DC5004BDDBA /* HomePageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageData.swift; sourceTree = "<group>"; };
 		40847921250147860084260D /* Armut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Armut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40847924250147860084260D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403D69182502818E00A8A63D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		403D69192502824700A8A63D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				403D691A2502829E00A8A63D /* Displayable.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		40847918250147860084260D = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +120,7 @@
 		4084793F250148AD0084260D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				403D69182502818E00A8A63D /* Views */,
 				40847928250147860084260D /* ServicesViewController.swift */,
 				4084794525014FA70084260D /* ServicesViewModel.swift */,
 			);
@@ -112,6 +130,7 @@
 		40847940250149BA0084260D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				403D69192502824700A8A63D /* Base */,
 				40847941250149C50084260D /* Service.swift */,
 				4084794325014C090084260D /* Post.swift */,
 				4084794725014FE70084260D /* NetworkManager.swift */,
@@ -200,6 +219,7 @@
 				40847927250147860084260D /* SceneDelegate.swift in Sources */,
 				4084794425014C090084260D /* Post.swift in Sources */,
 				40847942250149C50084260D /* Service.swift in Sources */,
+				403D691B2502829E00A8A63D /* Displayable.swift in Sources */,
 				4084794625014FA70084260D /* ServicesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

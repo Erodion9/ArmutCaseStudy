@@ -6,7 +6,7 @@
 //  Copyright © 2020 Deniz Mavi. All rights reserved.
 //
 
-struct Service: Codable {
+struct Service: Displayable {
     
     var id: Int?
     var service_id: Int?

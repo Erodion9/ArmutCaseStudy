@@ -6,7 +6,7 @@
 //  Copyright © 2020 Deniz Mavi. All rights reserved.
 //
 
-struct Post: Codable {
+struct Post: Displayable {
     
     var link: String?
     var title: String?
