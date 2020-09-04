@@ -8,15 +8,24 @@
 
 import UIKit
 
-final class TrendingServicesView: UIView, GalleryView {
+final class TrendingServicesView: GalleryView {
 
-    var contents: [Displayable]?
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+    private enum Constants {
+        
+        static let reuseIdentifier = "TrendingServicesCell"
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier ?? "", for: indexPath)
+        cell.backgroundColor = .blue
+        cell.frame.size = CGSize(width: 100, height: 100)
+        return cell
+    }
+    
+    override func layoutSubviews() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        reuseIdentifier = Constants.reuseIdentifier
+        collectionView.reloadData()
     }
 }

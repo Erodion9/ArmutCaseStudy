@@ -12,7 +12,8 @@ final class ServicesViewController: BaseViewController {
     
     private var homepageData = HomePageData()
     private var viewModel = ServicesViewModel()
-
+    @IBOutlet weak var trendingServicesView: TrendingServicesView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
@@ -33,6 +34,13 @@ extension ServicesViewController {
     private func reloadHomepageData(data: HomePageData) {
         homepageData = data
         print(homepageData)
+        DispatchQueue.main.async {
+            self.updateGalleries()
+        }
+    }
+    
+    private func updateGalleries() {
+        self.trendingServicesView.setContents(contents: self.homepageData.trending ?? [Displayable]())
     }
 }
 
