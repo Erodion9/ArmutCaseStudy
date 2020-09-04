@@ -9,7 +9,7 @@
 import UIKit
 
 final class ServicesViewController: BaseViewController {
-
+    
     private var homepageData = HomePageData()
     private var viewModel = ServicesViewModel()
 
