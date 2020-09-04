@@ -13,19 +13,21 @@ final class TrendingServicesView: GalleryView {
     private enum Constants {
         
         static let reuseIdentifier = "TrendingServicesCell"
+        static let nibName = "TrendingServicesCell"
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier ?? "", for: indexPath)
-        cell.backgroundColor = .blue
-        cell.frame.size = CGSize(width: 100, height: 100)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.reuseIdentifier, for: indexPath) as! TrendingServicesCell
+        //cell.frame.size = CGSize(width: 100, height: 100)
+        if let service = contents?[indexPath.row] as? Service {
+            cell.service = service
+            cell.configureView()
+        }
         return cell
     }
     
-    override func layoutSubviews() {
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        reuseIdentifier = Constants.reuseIdentifier
-        collectionView.reloadData()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        collectionView.register(UINib(nibName: Constants.nibName, bundle: nil), forCellWithReuseIdentifier: Constants.reuseIdentifier)
     }
 }

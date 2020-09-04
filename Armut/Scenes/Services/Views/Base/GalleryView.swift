@@ -24,6 +24,13 @@ class GalleryView: UIView, GalleryViewProtocol {
     var contents: [Displayable]?
     @IBOutlet internal var collectionView: UICollectionView!
     var reuseIdentifier: String?
+    
+    
+    override func layoutSubviews() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.reloadData()
+    }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return contents?.count ?? 0

@@ -11,6 +11,8 @@
 		403D691D250291FB00A8A63D /* TrendingServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D691C250291FB00A8A63D /* TrendingServicesView.swift */; };
 		403D69212502920C00A8A63D /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D69202502920C00A8A63D /* PostsView.swift */; };
 		403D69262502BEF200A8A63D /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D69252502BEF200A8A63D /* GalleryView.swift */; };
+		403D692C2502E38000A8A63D /* TrendingServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403D692B2502E38000A8A63D /* TrendingServicesCell.xib */; };
+		403D692E2502E47900A8A63D /* TrendingServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D692D2502E47900A8A63D /* TrendingServicesCell.swift */; };
 		4050614D25015DC5004BDDBA /* HomePageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050614C25015DC5004BDDBA /* HomePageData.swift */; };
 		40847925250147860084260D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847924250147860084260D /* AppDelegate.swift */; };
 		40847927250147860084260D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847926250147860084260D /* SceneDelegate.swift */; };
@@ -31,6 +33,8 @@
 		403D691C250291FB00A8A63D /* TrendingServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingServicesView.swift; sourceTree = "<group>"; };
 		403D69202502920C00A8A63D /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		403D69252502BEF200A8A63D /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		403D692B2502E38000A8A63D /* TrendingServicesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingServicesCell.xib; sourceTree = "<group>"; };
+		403D692D2502E47900A8A63D /* TrendingServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingServicesCell.swift; sourceTree = "<group>"; };
 		4050614C25015DC5004BDDBA /* HomePageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageData.swift; sourceTree = "<group>"; };
 		40847921250147860084260D /* Armut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Armut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40847924250147860084260D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 		403D69182502818E00A8A63D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				403D692A2502E31C00A8A63D /* TrendingServicesCell */,
 				403D69242502BEE500A8A63D /* Base */,
 				403D691C250291FB00A8A63D /* TrendingServicesView.swift */,
 				403D69202502920C00A8A63D /* PostsView.swift */,
@@ -83,6 +88,15 @@
 				403D69252502BEF200A8A63D /* GalleryView.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		403D692A2502E31C00A8A63D /* TrendingServicesCell */ = {
+			isa = PBXGroup;
+			children = (
+				403D692B2502E38000A8A63D /* TrendingServicesCell.xib */,
+				403D692D2502E47900A8A63D /* TrendingServicesCell.swift */,
+			);
+			path = TrendingServicesCell;
 			sourceTree = "<group>";
 		};
 		40847918250147860084260D = {
@@ -214,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403D692C2502E38000A8A63D /* TrendingServicesCell.xib in Resources */,
 				40847931250147870084260D /* LaunchScreen.storyboard in Resources */,
 				4084792E250147870084260D /* Assets.xcassets in Resources */,
 				4084792C250147860084260D /* Main.storyboard in Resources */,
@@ -234,6 +249,7 @@
 				4084793A250148090084260D /* BaseViewController.swift in Sources */,
 				403D69262502BEF200A8A63D /* GalleryView.swift in Sources */,
 				40847925250147860084260D /* AppDelegate.swift in Sources */,
+				403D692E2502E47900A8A63D /* TrendingServicesCell.swift in Sources */,
 				4050614D25015DC5004BDDBA /* HomePageData.swift in Sources */,
 				40847927250147860084260D /* SceneDelegate.swift in Sources */,
 				4084794425014C090084260D /* Post.swift in Sources */,
