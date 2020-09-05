@@ -25,6 +25,7 @@ import UIKit
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.reuseIdentifier, for: indexPath) as! PostCell
         if let post = contents?[indexPath.row] as? Post {
             cell.post = post
+            cell.delegate = self
             cell.configureView()
         }
         return cell

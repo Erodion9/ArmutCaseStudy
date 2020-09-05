@@ -25,6 +25,7 @@ final class ServicesView: GalleryView {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.reuseIdentifier, for: indexPath) as! ServiceCell
         if let service = contents?[indexPath.row] as? Service {
             cell.service = service
+            cell.delegate = self
             cell.configureView()
         }
         return cell

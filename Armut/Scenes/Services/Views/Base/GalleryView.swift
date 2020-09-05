@@ -19,11 +19,19 @@ protocol GalleryViewProtocol: UIView, UICollectionViewDelegate, UICollectionView
     func setContents(contents: [Displayable])
 }
 
-class GalleryView: UIView, GalleryViewProtocol {
+protocol GalleryCellDelegate: class {
+
+    func showServiceDetail(id: Int)
+    func showPostLink(url: URL)
+}
+
+class GalleryView: UIView, GalleryViewProtocol, GalleryCellDelegate {
     
     var contents: [Displayable]?
     @IBOutlet internal var collectionView: UICollectionView!
     var reuseIdentifier: String?
+    
+    weak var delegate: GalleryViewDelegate?
 
     override func layoutSubviews() {
         collectionView.delegate = self
@@ -42,5 +50,14 @@ class GalleryView: UIView, GalleryViewProtocol {
     func setContents(contents: [Displayable]) {
         self.contents = contents
         collectionView.reloadData()
+    }
+    
+    //MARK: - GalleryCellDelegate
+    func showServiceDetail(id: Int) {
+        self.delegate?.showServiceDetail(id: id)
+    }
+    
+    func showPostLink(url: URL) {
+        self.delegate?.showPostLink(url: url)
     }
 }

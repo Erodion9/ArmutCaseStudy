@@ -52,6 +52,13 @@
                             <constraint firstItem="fV7-hh-ZzW" firstAttribute="leading" secondItem="4jd-66-A46" secondAttribute="leading" constant="8" id="vGY-nX-lhY"/>
                         </constraints>
                     </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j94-Nd-UVO" userLabel="Details Button">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="180"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="detailsButtonTapped:" destination="mfy-4E-hBl" eventType="touchUpInside" id="udv-aX-mcC"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="aW8-23-fqI" firstAttribute="centerX" secondItem="tXz-hJ-ue0" secondAttribute="centerX" id="EDX-4t-Edl"/>

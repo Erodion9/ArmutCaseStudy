@@ -15,6 +15,7 @@ final class PostCell: UICollectionViewCell {
     @IBOutlet weak var categoryLabel: UILabel!
     
     var post: Post?
+    weak var delegate: GalleryCellDelegate?
 }
 
 //MARK: - Configure View
@@ -53,5 +54,13 @@ extension PostCell {
             }
         }
         downloadPicTask.resume()
+    }
+}
+
+//MARK: - Actions
+extension PostCell {
+    @IBAction func detailsButtonTapped(_ sender: Any) {
+        guard let url = URL(string: post?.link ?? "") else { return }
+        delegate?.showPostLink(url: url)
     }
 }

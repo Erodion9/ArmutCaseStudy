@@ -15,6 +15,7 @@ final class ServiceCell: UICollectionViewCell {
     @IBOutlet weak var prosNearLabel: UILabel!
     
     var service: Service?
+    weak var delegate: GalleryCellDelegate?
 }
 
 //MARK: - Configure View
@@ -53,5 +54,13 @@ extension ServiceCell {
             }
         }
         downloadPicTask.resume()
+    }
+}
+
+//MARK: - Actions
+extension ServiceCell {
+    @IBAction func detailsButtonTapped(_ sender: Any) {
+        guard let id = service?.id else { return }
+        delegate?.showServiceDetail(id: id)
     }
 }
