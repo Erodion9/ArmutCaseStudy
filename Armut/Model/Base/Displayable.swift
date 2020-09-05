@@ -8,5 +8,5 @@
 
 protocol Displayable: Codable {
     
-    var image_url: String? { get set }
+    var image_url: String { get set }
 }

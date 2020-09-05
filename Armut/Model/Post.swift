@@ -7,9 +7,9 @@
 //
 
 struct Post: Displayable {
-    
-    var link: String?
-    var title: String?
-    var category: String?
-    var image_url: String?
+
+    var link: String
+    var title: String
+    var category: String
+    var image_url: String
 }

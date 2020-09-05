@@ -10,11 +10,23 @@ import UIKit
 
  final class PostsView: GalleryView {
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+    private enum Constants {
+        
+        static let reuseIdentifier = "PostCell"
+        static let nibName = "PostCell"
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.reuseIdentifier, for: indexPath) as! PostCell
+        if let post = contents?[indexPath.row] as? Post {
+            cell.post = post
+            cell.configureView()
+        }
+        return cell
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        collectionView.register(UINib(nibName: Constants.nibName, bundle: nil), forCellWithReuseIdentifier: Constants.reuseIdentifier)
     }
 }

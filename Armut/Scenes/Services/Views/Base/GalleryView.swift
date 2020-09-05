@@ -24,8 +24,7 @@ class GalleryView: UIView, GalleryViewProtocol {
     var contents: [Displayable]?
     @IBOutlet internal var collectionView: UICollectionView!
     var reuseIdentifier: String?
-    
-    
+
     override func layoutSubviews() {
         collectionView.delegate = self
         collectionView.dataSource = self
