@@ -14,8 +14,5 @@ final class ServiceDetailViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let id = passedParameters as? Int {
-            print("DetailView Got id: \(id)")
-        }
     }
 }

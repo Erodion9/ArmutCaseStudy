@@ -21,7 +21,7 @@ protocol GalleryViewProtocol: UIView, UICollectionViewDelegate, UICollectionView
 
 protocol GalleryCellDelegate: class {
 
-    func showServiceDetail(id: Int)
+    func showServiceDetail(id: Int, image: UIImage)
     func showPostLink(url: URL)
 }
 
@@ -53,8 +53,8 @@ class GalleryView: UIView, GalleryViewProtocol, GalleryCellDelegate {
     }
     
     //MARK: - GalleryCellDelegate
-    func showServiceDetail(id: Int) {
-        self.delegate?.showServiceDetail(id: id)
+    func showServiceDetail(id: Int, image: UIImage) {
+        self.delegate?.showServiceDetail(id: id, image: image)
     }
     
     func showPostLink(url: URL) {

@@ -10,7 +10,7 @@ import UIKit
 
 protocol GalleryViewDelegate: class {
     
-    func showServiceDetail(id: Int)
+    func showServiceDetail(id: Int, image: UIImage)
     func showPostLink(url: URL)
 }
 
@@ -59,15 +59,16 @@ extension ServicesViewController {
 //MARK: - GalleryViewDelegate
 extension ServicesViewController: GalleryViewDelegate {
 
-    func showServiceDetail(id: Int) {
+    func showServiceDetail(id: Int, image: UIImage) {
         //Redirect to detailed view
-        show(storyboard: .serviceDetail, style: .pageSheet, passedParameters: id)
+        let passedParameters = (id: id, image: image)
+        show(storyboard: .serviceDetail, style: .pageSheet, passedParameters: passedParameters)
     }
     
     func showPostLink(url: URL) {
         //Show post webpage
         print("Post to be redirected \(url.absoluteString)")
-        show(storyboard: .postDetail, style: .overFullScreen, passedParameters: url)
+        show(storyboard: .postDetail, style: .formSheet, passedParameters: url)
     }
 }
 

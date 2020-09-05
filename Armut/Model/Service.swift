@@ -6,6 +6,8 @@
 //  Copyright © 2020 Deniz Mavi. All rights reserved.
 //
 
+import UIKit
+
 struct Service: Displayable {
 
     var id: Int

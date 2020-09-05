@@ -35,7 +35,7 @@ extension ServiceCell {
 //MARK: - Actions
 extension ServiceCell {
     @IBAction func detailsButtonTapped(_ sender: Any) {
-        guard let id = service?.id else { return }
-        delegate?.showServiceDetail(id: id)
+        guard let id = service?.id, let image = imageView.image else { return }
+        delegate?.showServiceDetail(id: id, image: image)
     }
 }

@@ -26,4 +26,16 @@ extension Routable where Self: UIViewController, StoryboardIdentifier.RawValue =
         controller.passedParameters = passedParameters
         show(controller, sender: self)
     }
+    
+    func getViewController(storyboard: StoryboardIdentifier, passedParameters: Any?) -> BaseViewController? {
+        let storyboard = UIStoryboard(name: storyboard.rawValue, bundle: nil)
+        
+        guard let controller = storyboard.instantiateInitialViewController() as? BaseViewController else {
+            assertionFailure("Invalid controller for storyboard: \(storyboard).")
+            return nil
+        }
+        controller.passedParameters = passedParameters
+        
+        return controller
+    }
 }
