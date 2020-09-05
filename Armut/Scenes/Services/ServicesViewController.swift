@@ -61,12 +61,13 @@ extension ServicesViewController: GalleryViewDelegate {
 
     func showServiceDetail(id: Int) {
         //Redirect to detailed view
-        print("Id to be shown detail of: \(id)")
+        show(storyboard: .serviceDetail, style: .pageSheet, passedParameters: id)
     }
     
     func showPostLink(url: URL) {
         //Show post webpage
         print("Post to be redirected \(url.absoluteString)")
+        show(storyboard: .postDetail, style: .overFullScreen, passedParameters: url)
     }
 }
 
@@ -78,5 +79,14 @@ private extension ServicesViewController {
         case .reloadServices(homepageData: let homepageData):
             self.reloadHomepageData(data: homepageData)
         }
+    }
+}
+
+//MARK: - Routing
+extension ServicesViewController: Routable {
+
+    enum StoryboardIdentifier: String {
+        case serviceDetail = "ServiceDetail"
+        case postDetail = "PostDetail"
     }
 }

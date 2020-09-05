@@ -39,7 +39,6 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ula-4d-8Kr">
                         <rect key="frame" x="0.0" y="0.0" width="223" height="341"/>
-                        <state key="normal" title="Button"/>
                         <connections>
                             <action selector="detailsButtonTapped:" destination="Ztt-RU-wVO" eventType="touchUpInside" id="BYF-Vo-wH1"/>
                         </connections>

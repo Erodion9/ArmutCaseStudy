@@ -15,6 +15,13 @@
 		403D69312503105000A8A63D /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403D69302503105000A8A63D /* PostCell.xib */; };
 		403D69332503105B00A8A63D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D69322503105B00A8A63D /* PostCell.swift */; };
 		404C9C7E2503C23100BF00D7 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C9C7D2503C23100BF00D7 /* GalleryCell.swift */; };
+		404C9C812503C38E00BF00D7 /* ServiceDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404C9C802503C38E00BF00D7 /* ServiceDetail.storyboard */; };
+		404C9C842503C57300BF00D7 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C9C832503C57300BF00D7 /* Routable.swift */; };
+		404C9C862503C81500BF00D7 /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C9C852503C81500BF00D7 /* ServiceDetailViewController.swift */; };
+		404C9C882503C81E00BF00D7 /* ServiceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C9C872503C81E00BF00D7 /* ServiceDetailViewModel.swift */; };
+		404C9C8B2503D3EA00BF00D7 /* PostDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404C9C8A2503D3EA00BF00D7 /* PostDetail.storyboard */; };
+		404C9C8D2503D3F500BF00D7 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C9C8C2503D3F500BF00D7 /* PostDetailViewController.swift */; };
+		404C9C8F2503D42D00BF00D7 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C9C8E2503D42D00BF00D7 /* PostDetailViewModel.swift */; };
 		4050614D25015DC5004BDDBA /* HomePageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050614C25015DC5004BDDBA /* HomePageData.swift */; };
 		40847925250147860084260D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847924250147860084260D /* AppDelegate.swift */; };
 		40847927250147860084260D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40847926250147860084260D /* SceneDelegate.swift */; };
@@ -40,6 +47,13 @@
 		403D69302503105000A8A63D /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		403D69322503105B00A8A63D /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		404C9C7D2503C23100BF00D7 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		404C9C802503C38E00BF00D7 /* ServiceDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServiceDetail.storyboard; sourceTree = "<group>"; };
+		404C9C832503C57300BF00D7 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		404C9C852503C81500BF00D7 /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
+		404C9C872503C81E00BF00D7 /* ServiceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewModel.swift; sourceTree = "<group>"; };
+		404C9C8A2503D3EA00BF00D7 /* PostDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostDetail.storyboard; sourceTree = "<group>"; };
+		404C9C8C2503D3F500BF00D7 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		404C9C8E2503D42D00BF00D7 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		4050614C25015DC5004BDDBA /* HomePageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageData.swift; sourceTree = "<group>"; };
 		40847921250147860084260D /* Armut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Armut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40847924250147860084260D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +130,34 @@
 			path = PostCell;
 			sourceTree = "<group>";
 		};
+		404C9C7F2503C2E800BF00D7 /* ServiceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				404C9C802503C38E00BF00D7 /* ServiceDetail.storyboard */,
+				404C9C852503C81500BF00D7 /* ServiceDetailViewController.swift */,
+				404C9C872503C81E00BF00D7 /* ServiceDetailViewModel.swift */,
+			);
+			path = ServiceDetail;
+			sourceTree = "<group>";
+		};
+		404C9C822503C47E00BF00D7 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				404C9C832503C57300BF00D7 /* Routable.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		404C9C892503D3CB00BF00D7 /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				404C9C8A2503D3EA00BF00D7 /* PostDetail.storyboard */,
+				404C9C8C2503D3F500BF00D7 /* PostDetailViewController.swift */,
+				404C9C8E2503D42D00BF00D7 /* PostDetailViewModel.swift */,
+			);
+			path = PostView;
+			sourceTree = "<group>";
+		};
 		40847918250147860084260D = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +192,7 @@
 		40847938250147F90084260D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				404C9C822503C47E00BF00D7 /* Routing */,
 				40847939250148090084260D /* BaseViewController.swift */,
 				4084793B250148130084260D /* BaseViewModel.swift */,
 			);
@@ -168,6 +211,8 @@
 		4084793F250148AD0084260D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				404C9C892503D3CB00BF00D7 /* PostView */,
+				404C9C7F2503C2E800BF00D7 /* ServiceDetail */,
 				403D69182502818E00A8A63D /* Views */,
 				40847928250147860084260D /* ServicesViewController.swift */,
 				4084794525014FA70084260D /* ServicesViewModel.swift */,
@@ -250,6 +295,8 @@
 				403D69312503105000A8A63D /* PostCell.xib in Resources */,
 				4084792E250147870084260D /* Assets.xcassets in Resources */,
 				4084792C250147860084260D /* Main.storyboard in Resources */,
+				404C9C8B2503D3EA00BF00D7 /* PostDetail.storyboard in Resources */,
+				404C9C812503C38E00BF00D7 /* ServiceDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +314,9 @@
 				4084793A250148090084260D /* BaseViewController.swift in Sources */,
 				403D69262502BEF200A8A63D /* GalleryView.swift in Sources */,
 				40847925250147860084260D /* AppDelegate.swift in Sources */,
+				404C9C882503C81E00BF00D7 /* ServiceDetailViewModel.swift in Sources */,
+				404C9C842503C57300BF00D7 /* Routable.swift in Sources */,
+				404C9C8D2503D3F500BF00D7 /* PostDetailViewController.swift in Sources */,
 				403D69332503105B00A8A63D /* PostCell.swift in Sources */,
 				403D692E2502E47900A8A63D /* ServiceCell.swift in Sources */,
 				4050614D25015DC5004BDDBA /* HomePageData.swift in Sources */,
@@ -275,8 +325,10 @@
 				40DC25882503144900FCC33C /* ServicesView.swift in Sources */,
 				404C9C7E2503C23100BF00D7 /* GalleryCell.swift in Sources */,
 				40847942250149C50084260D /* Service.swift in Sources */,
+				404C9C8F2503D42D00BF00D7 /* PostDetailViewModel.swift in Sources */,
 				403D691B2502829E00A8A63D /* Displayable.swift in Sources */,
 				4084794625014FA70084260D /* ServicesViewModel.swift in Sources */,
+				404C9C862503C81500BF00D7 /* ServiceDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
