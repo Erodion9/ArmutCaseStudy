@@ -21,13 +21,11 @@ extension ServiceCell {
     
     func configureView() {
         if let service = service {
-            guard let url = URL(string: service.image_url) else {
-                print("Invalid URL: \(service.image_url)")
-                return
-            }
             titleLabel.text = service.name
             prosNearLabel.text = String(service.pro_count)
+            if let url = URL(string: service.image_url){
             loadImage(url: url)
+            }
         }
     }
 }
@@ -35,7 +33,7 @@ extension ServiceCell {
 //MARK: - Actions
 extension ServiceCell {
     @IBAction func detailsButtonTapped(_ sender: Any) {
-        guard let id = service?.id, let image = imageView.image else { return }
-        delegate?.showServiceDetail(id: id, image: image)
+        guard let id = service?.id else { return }
+        delegate?.showServiceDetail(id: id, image: imageView.image ?? UIImage())
     }
 }

@@ -199,7 +199,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="Cea-wh-DmG" secondAttribute="bottom" constant="8" id="2zr-rR-KJ4"/>
                                             <constraint firstAttribute="height" constant="800" id="LJR-L4-uJ3"/>

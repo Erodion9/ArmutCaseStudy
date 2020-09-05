@@ -6,16 +6,27 @@
 //  Copyright © 2020 Deniz Mavi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import WebKit
 
 final class PostDetailViewController: BaseViewController {
     
+    @IBOutlet weak var webView: WKWebView!
     var viewModel = PostDetailViewModel()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if let url = passedParameters as? URL {
-            print("Will show URL: \(url.absoluteString)")
+            loadWebpage(url: url)
         }
+    }
+}
+
+//MARK: - View Configuration
+extension PostDetailViewController {
+    
+    func loadWebpage(url: URL) {
+        let request = URLRequest(url: url)
+        webView.load(request)
     }
 }
