@@ -22,7 +22,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogY-4X-Nq7" userLabel="NameLabel">
-                                        <rect key="frame" x="8" y="152" width="398" height="40"/>
+                                        <rect key="frame" x="16" y="152" width="390" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="tbp-ZE-DNY"/>
                                         </constraints>
@@ -35,7 +35,7 @@
                                     <constraint firstAttribute="trailing" secondItem="ogY-4X-Nq7" secondAttribute="trailing" constant="8" id="46z-ee-l5L"/>
                                     <constraint firstAttribute="bottom" secondItem="26r-Zb-2KH" secondAttribute="bottom" id="AZU-b2-uGc"/>
                                     <constraint firstAttribute="bottom" secondItem="ogY-4X-Nq7" secondAttribute="bottom" constant="8" id="F7t-tj-RnC"/>
-                                    <constraint firstItem="ogY-4X-Nq7" firstAttribute="leading" secondItem="7cm-t2-1XX" secondAttribute="leading" constant="8" id="Kig-oO-vBM"/>
+                                    <constraint firstItem="ogY-4X-Nq7" firstAttribute="leading" secondItem="7cm-t2-1XX" secondAttribute="leading" constant="16" id="Kig-oO-vBM"/>
                                     <constraint firstAttribute="height" constant="200" id="Mdz-4P-XVq"/>
                                     <constraint firstItem="26r-Zb-2KH" firstAttribute="top" secondItem="7cm-t2-1XX" secondAttribute="top" id="Ou9-JY-B2B"/>
                                     <constraint firstAttribute="trailing" secondItem="26r-Zb-2KH" secondAttribute="trailing" id="Qlt-hQ-9nH"/>
@@ -277,6 +277,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fMq-Ua-GCK"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="26r-Zb-2KH" id="geB-QE-zDd"/>
+                        <outlet property="jobCompletedLabel" destination="F49-gp-17g" id="fUc-j8-MLQ"/>
+                        <outlet property="nameLabel" destination="ogY-4X-Nq7" id="Jxl-FO-Bh0"/>
+                        <outlet property="proCountLabel" destination="d22-GB-JEP" id="wUA-gw-k79"/>
+                        <outlet property="ratingLabel" destination="neK-eb-SbB" id="sv6-qX-91v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Crd-Mp-caE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
