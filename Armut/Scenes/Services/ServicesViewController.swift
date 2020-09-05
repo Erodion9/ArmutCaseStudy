@@ -14,6 +14,7 @@ final class ServicesViewController: BaseViewController {
     private var viewModel = ServicesViewModel()
     @IBOutlet weak var trendingServicesView: GalleryView!
     @IBOutlet weak var otherView: GalleryView!
+    @IBOutlet weak var postsView: PostsView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,7 @@ extension ServicesViewController {
     private func updateGalleries() {
         trendingServicesView.setContents(contents: self.homepageData.trending ?? [Displayable]())
         otherView.setContents(contents: self.homepageData.other ?? [Displayable]())
+        postsView.setContents(contents: self.homepageData.posts ?? [Displayable]())
     }
 }
 
