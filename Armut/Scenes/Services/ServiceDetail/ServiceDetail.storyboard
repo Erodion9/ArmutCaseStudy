@@ -56,7 +56,7 @@
                                 <rect key="frame" x="0.0" y="252" width="414" height="552"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SB-5f-Lnc" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="650"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmS-Oe-lHk" userLabel="Statistics">
                                                 <rect key="frame" x="8" y="8" width="398" height="400"/>
@@ -238,10 +238,20 @@
                                                     <constraint firstAttribute="trailing" secondItem="IER-tI-e3i" secondAttribute="trailing" id="npI-CC-5n4"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-uw-Yc1" userLabel="How It Works">
-                                                <rect key="frame" x="0.0" y="506" width="406" height="250"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-uw-Yc1" userLabel="How It Works">
+                                                <rect key="frame" x="8" y="392" width="398" height="250"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How It Works" translatesAutoresizingMaskIntoConstraints="NO" id="cXo-J1-mNH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="250"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="cXo-J1-mNH" secondAttribute="bottom" id="Wae-Qm-dFN"/>
+                                                    <constraint firstItem="cXo-J1-mNH" firstAttribute="leading" secondItem="ZHG-uw-Yc1" secondAttribute="leading" id="Z3u-3x-25Y"/>
+                                                    <constraint firstItem="cXo-J1-mNH" firstAttribute="top" secondItem="ZHG-uw-Yc1" secondAttribute="top" id="h66-iH-fLJ"/>
+                                                    <constraint firstAttribute="height" constant="250" id="hbd-xL-3jL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cXo-J1-mNH" secondAttribute="trailing" id="ymJ-nA-zsp"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -249,7 +259,10 @@
                                             <constraint firstItem="OmS-Oe-lHk" firstAttribute="leading" secondItem="2SB-5f-Lnc" secondAttribute="leading" constant="8" id="67p-eK-ns6"/>
                                             <constraint firstAttribute="trailing" secondItem="OmS-Oe-lHk" secondAttribute="trailing" constant="8" id="BSg-HU-F9P"/>
                                             <constraint firstItem="OmS-Oe-lHk" firstAttribute="top" secondItem="2SB-5f-Lnc" secondAttribute="top" constant="8" id="ILM-fo-737"/>
-                                            <constraint firstAttribute="height" constant="750" id="cJY-fV-kUD"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZHG-uw-Yc1" secondAttribute="trailing" constant="8" id="VZO-Oc-afh"/>
+                                            <constraint firstAttribute="height" constant="650" id="cJY-fV-kUD"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZHG-uw-Yc1" secondAttribute="bottom" constant="8" id="ho3-Ua-bRI"/>
+                                            <constraint firstItem="ZHG-uw-Yc1" firstAttribute="leading" secondItem="2SB-5f-Lnc" secondAttribute="leading" constant="8" id="rcU-kq-hQo"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -291,6 +304,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="How It Works" width="762" height="436"/>
         <image name="icn-hizmet-garanti-orange" width="15" height="18"/>
         <image name="icn-job-done-orange" width="16" height="12"/>
         <image name="icn-profesyonel-number-orange" width="16" height="13"/>
