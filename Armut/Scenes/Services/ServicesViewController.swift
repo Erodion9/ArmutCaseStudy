@@ -67,7 +67,6 @@ extension ServicesViewController: GalleryViewDelegate {
     
     func showPostLink(url: URL) {
         //Show post webpage
-        print("Post to be redirected \(url.absoluteString)")
         show(storyboard: .postDetail, style: .formSheet, passedParameters: url)
     }
 }

@@ -18,6 +18,4 @@ struct Service: Displayable {
     var long_name: String?
     var average_rating: Float?
     var completed_jobs_on_last_month: Int?
-    
-    //Todo: Handle invalid image_url's
 }

@@ -22,7 +22,7 @@ extension PostCell {
     func configureView() {
         if let post = post {
             guard let url = URL(string: post.image_url) else {
-                print("Invalid URL: \(post.image_url)")
+                print("Invalid Image URL: \(post.image_url)")
                 return
             }
             titleLabel.text = post.title

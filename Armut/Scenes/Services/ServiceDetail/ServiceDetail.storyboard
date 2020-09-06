@@ -149,7 +149,7 @@
                                                                             <constraint firstAttribute="height" constant="25" id="uMu-OI-KmO"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last month x y job completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F49-gp-17g" userLabel="Job Done Label">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last month x  job(s) completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F49-gp-17g" userLabel="Job Done Label">
                                                                         <rect key="frame" x="41" y="27" width="349" height="20.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20.5" id="yJA-0B-TFK"/>

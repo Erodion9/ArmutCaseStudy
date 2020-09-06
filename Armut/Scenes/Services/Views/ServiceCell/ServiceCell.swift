@@ -10,6 +10,11 @@ import UIKit
 
 final class ServiceCell: GalleryCell {
     
+    private enum Constants {
+        
+        static let proCountAfterText = " pros near you"
+    }
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var prosNearLabel: UILabel!
     
@@ -22,7 +27,7 @@ extension ServiceCell {
     func configureView() {
         if let service = service {
             titleLabel.text = service.name
-            prosNearLabel.text = String(service.pro_count)
+            prosNearLabel.text = String(service.pro_count) + Constants.proCountAfterText
             if let url = URL(string: service.image_url){
             loadImage(url: url)
             }
