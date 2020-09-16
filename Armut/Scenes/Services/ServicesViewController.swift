@@ -18,9 +18,9 @@ final class ServicesViewController: BaseViewController {
     
     private var homepageData = HomePageData()
     private var viewModel = ServicesViewModel()
-    @IBOutlet weak var trendingServicesView: ServicesView!
-    @IBOutlet weak var otherView: ServicesView!
-    @IBOutlet weak var postsView: PostsView!
+    @IBOutlet private weak var trendingServicesView: ServicesView!
+    @IBOutlet private weak var otherView: ServicesView!
+    @IBOutlet private weak var postsView: PostsView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +29,9 @@ final class ServicesViewController: BaseViewController {
 }
 
 //MARK: - View Configuration
-extension ServicesViewController {
+private extension ServicesViewController {
     
-    private func configureView() {
+    func configureView() {
         viewModel.stateChangeHandler = { [weak self] change in
         self?.apply(change: change)
         }
@@ -42,14 +42,14 @@ extension ServicesViewController {
         postsView.delegate = self
     }
 
-    private func reloadHomepageData(data: HomePageData) {
+    func reloadHomepageData(data: HomePageData) {
         homepageData = data
         DispatchQueue.main.async {
             self.updateGalleries()
         }
     }
     
-    private func updateGalleries() {
+    func updateGalleries() {
         trendingServicesView.setContents(contents: self.homepageData.trending ?? [Displayable]())
         otherView.setContents(contents: self.homepageData.other ?? [Displayable]())
         postsView.setContents(contents: self.homepageData.posts ?? [Displayable]())
@@ -60,13 +60,11 @@ extension ServicesViewController {
 extension ServicesViewController: GalleryViewDelegate {
 
     func showServiceDetail(id: Int, image: UIImage) {
-        //Redirect to detailed view
         let passedParameters = (id: id, image: image)
         show(storyboard: .serviceDetail, style: .pageSheet, passedParameters: passedParameters)
     }
     
     func showPostLink(url: URL) {
-        //Show post webpage
         show(storyboard: .postDetail, style: .formSheet, passedParameters: url)
     }
 }

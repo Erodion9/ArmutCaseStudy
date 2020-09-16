@@ -15,8 +15,8 @@ final class ServiceCell: GalleryCell {
         static let proCountAfterText = " pros near you"
     }
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var prosNearLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var prosNearLabel: UILabel!
     
     var service: Service?
 }

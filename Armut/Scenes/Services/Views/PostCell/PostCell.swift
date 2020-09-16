@@ -10,8 +10,8 @@ import UIKit
 
 final class PostCell: GalleryCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var categoryLabel: UILabel!
     
     var post: Post?
 }

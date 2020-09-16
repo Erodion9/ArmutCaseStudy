@@ -10,7 +10,7 @@ import UIKit
 
 class GalleryCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet internal weak var imageView: UIImageView!
     weak var delegate: GalleryCellDelegate?
 }
 

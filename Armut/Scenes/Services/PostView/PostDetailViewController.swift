@@ -11,8 +11,8 @@ import WebKit
 
 final class PostDetailViewController: BaseViewController {
     
-    @IBOutlet weak var webView: WKWebView!
-    var viewModel = PostDetailViewModel()
+    @IBOutlet private weak var webView: WKWebView!
+    private var viewModel = PostDetailViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()

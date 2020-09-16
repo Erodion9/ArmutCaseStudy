@@ -25,11 +25,11 @@ protocol GalleryCellDelegate: class {
     func showPostLink(url: URL)
 }
 
-class GalleryView: UIView, GalleryViewProtocol, GalleryCellDelegate {
+class GalleryView: UIView, GalleryViewProtocol {
     
-    var contents: [Displayable]?
     @IBOutlet internal var collectionView: UICollectionView!
-    var reuseIdentifier: String?
+    var contents: [Displayable]?
+    internal var reuseIdentifier: String?
     
     weak var delegate: GalleryViewDelegate?
 
@@ -51,8 +51,11 @@ class GalleryView: UIView, GalleryViewProtocol, GalleryCellDelegate {
         self.contents = contents
         collectionView.reloadData()
     }
+}
+
+//MARK: - GalleryCellDelegate
+extension GalleryView: GalleryCellDelegate {
     
-    //MARK: - GalleryCellDelegate
     func showServiceDetail(id: Int, image: UIImage) {
         self.delegate?.showServiceDetail(id: id, image: image)
     }

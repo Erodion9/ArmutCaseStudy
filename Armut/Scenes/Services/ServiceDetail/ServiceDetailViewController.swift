@@ -10,13 +10,13 @@ import UIKit
 
 final class ServiceDetailViewController: BaseViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var proCountLabel: UILabel!
-    @IBOutlet weak var ratingLabel: UILabel!
-    @IBOutlet weak var jobCompletedLabel: UILabel!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var proCountLabel: UILabel!
+    @IBOutlet private weak var ratingLabel: UILabel!
+    @IBOutlet private weak var jobCompletedLabel: UILabel!
 
-    var viewModel = ServiceDetailViewModel()
+    private var viewModel = ServiceDetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ final class ServiceDetailViewController: BaseViewController {
 }
 
 //MARK: - View Configuration
-extension ServiceDetailViewController {
+private extension ServiceDetailViewController {
     
     func configureView() {
         viewModel.stateChangeHandler = { [weak self] change in
