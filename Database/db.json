@@ -1,0 +1,216 @@
+{
+  "home": {
+    "trending": [
+      {
+        "id": 191,
+        "service_id": 191,
+        "name": "Ev Temizliği",
+        "long_name": "Ev Temizliği",
+        "image_url": "https://cdn.armut.com/images/services/00191-ev-temizligi_thumb_875x500.jpg",
+        "pro_count": 7513
+      },
+      {
+        "id": 208,
+        "service_id": 208,
+        "name": "Tadilat",
+        "long_name": "Tadilat, Dekorasyon ve İnşaat",
+        "image_url": "https://cdn.armut.com/images/services/00208_cati_yapimi_ve_tadilati_thumb_875x500.jpg",
+        "pro_count": 7851
+      },
+      {
+        "id": 142,
+        "service_id": 142,
+        "name": "Evden Eve Nakliye",
+        "long_name": "Evden Eve Nakliyat",
+        "image_url": "https://cdn.armut.com/images/services/0142-evden-eve-nakliyat-thumb.jpg",
+        "pro_count": 5423
+      },
+      {
+        "id": 222,
+        "service_id": 222,
+        "name": "Mobilya Montaj",
+        "long_name": "Mobilya Montaj",
+        "image_url": "https://cdn.armut.com/images/services/00222_mobilya_montaj_thumb_875x500.jpg",
+        "pro_count": 1278
+      },
+      {
+        "id": 310,
+        "service_id": 310,
+        "name": "Fransızca Özel Ders",
+        "long_name": "Fransızca Özel Ders",
+        "image_url": "https://cdn.armut.com/images/services/00310_fransizca_ozel_ders_thumb_875x500.jpg",
+        "pro_count": 1245
+      }
+    ],
+    "other": [
+      {
+        "id": 59,
+        "service_id": 59,
+        "name": "Düğün Organizasyon",
+        "long_name": "Düğün Organizasyon",
+        "image_url": "https://cdn.armut.com/images/services/00059-dugun-organizasyon_thumb_875x500.jpg",
+        "pro_count": 452
+      },
+      {
+        "id": 5819,
+        "service_id": 5819,
+        "name": "Evlilik Teklifi Organizasyon",
+        "long_name": "Evlilik Teklifi Organizasyon",
+        "image_url": "https://cdn.armut.com/images/services/05819-evlilik-teklifi-organizasyon_thumb_875x500.jpg",
+        "pro_count": 354
+      },
+      {
+        "id": 220,
+        "service_id": 220,
+        "name": "Resim Özel Ders",
+        "long_name": "Resim Özel Ders",
+        "image_url": "https://cdn.armut.com/images/services/00220_resim_özel_ders_thumb_875x500.jpg",
+        "pro_count": 123
+      },
+      {
+        "id": 222,
+        "service_id": 222,
+        "name": "Mobilya Montaj",
+        "long_name": "Mobilya Montaj",
+        "image_url": "https://cdn.armut.com/images/services/00222_mobilya_montaj_thumb_875x500.jpg",
+        "pro_count": 12577
+      },
+      {
+        "id": 223,
+        "service_id": 223,
+        "name": "Gelinlik",
+        "long_name": "Gelinlik",
+        "image_url": "https://cdn.armut.com/images/services/00059-dugun-organizasyon_thumb_875x500.jpg",
+        "pro_count": 1
+      }
+    ],
+    "posts": [
+      {
+        "title": "6 Maddede Derin Dondurucu Temizliği Nasıl Yapılır?",
+        "category": "EV TEMİZLİGİ",
+        "image_url": "https://images.squarespace-cdn.com/content/v1/58412fc9b3db2b11ba9398df/1598946432357-MLYFMLRSWWS3F906DZK2/ke17ZwdGBToddI8pDm48kB6N0s8PWtX2k_eW8krg04V7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1URWK2DJDpV27WG7FD5VZsfFVodF6E_6KI51EW1dNf095hdyjf10zfCEVHp52s13p8g/390e6f25739bc9550ee7c831da9cadc9-1800w-1200h.jpg?format=2500w",
+        "link": "https://blog2.armut.com/blog/6-maddede-derin-dondurucu-temizligi-nasil-yapilir"
+      },
+      {
+        "link": "https://blog2.armut.com/blog/ebeveynler-icin-uzaktan-egiitim-rehberi",
+        "title": "Ebeveynler İçin Uzaktan Eğitim Rehberi",
+        "category": "YARARLI BİLGİLER",
+        "image_url": "https://images.squarespace-cdn.com/content/v1/58412fc9b3db2b11ba9398df/1598946527036-6C2SJOTNXPEJ0LJF0QC0/ke17ZwdGBToddI8pDm48kNbIzWTDDTxyrebyqwNk8usUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc2s9SdbE1Zb521b3S072QbnSjva5cxbsZ1EDvxnP9UuKqRh3CnvLXqtichjndUTQY/1597387697758-uzaktan.jpg?format=2500w"
+      },
+      {
+        "link": "https://blog2.armut.com/blog/11-adimda-balkon-temizligi-nasil-yapilir",
+        "title": "11 Adımda Balkon Temizliği Nasıl Yapılır?",
+        "category": "EV TEMİZLİGİ",
+        "image_url": "https://images.squarespace-cdn.com/content/v1/58412fc9b3db2b11ba9398df/1597960562436-JZZOFVQEYUH420VD6YSJ/ke17ZwdGBToddI8pDm48kOkWQEgjPN_JprKcj9SRzsx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZKMcwKs19vMqOzLjfUP-GI6mbGglOcCs0NAHHDKo0G-1u4hEiHzW4n9bjQj24ciiw/teamwork-2000x1331.jpg?format=2500w"
+      },
+      {
+        "link": "https://blog2.armut.com/blog/marangozuna-yaptirabilecegin-12-mobilya-fikri",
+        "title": "Marangozuna Yaptırabileceğin 12 Mobilya Fikri",
+        "category": "EV DEKORASYONU",
+        "image_url": "https://images.squarespace-cdn.com/content/v1/58412fc9b3db2b11ba9398df/1597707102472-7I3HOH40SHAB4X1OU7DX/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/Evostyle-Anywhere-Office-Portable-Desk-Screen-Australian-Product-Design-Yellowtrace-15.jpg?format=2500w"
+      }
+    ]
+  },
+  "service": [
+    {
+      "id": 191,
+      "service_id": 191,
+      "name": "Ev Temizliği",
+      "long_name": "Ev Temizliği",
+      "image_url": "https://cdn.armut.com/images/services/00191-ev-temizligi_thumb_875x500.jpg",
+      "pro_count": 7513,
+      "average_rating": 4.8,
+      "completed_jobs_on_last_month": 14556
+    },
+    {
+      "id": 208,
+      "service_id": 208,
+      "name": "Tadilat",
+      "long_name": "Tadilat, Dekorasyon ve İnşaat",
+      "image_url": "https://cdn.armut.com/images/services/00208_cati_yapimi_ve_tadilati_thumb_875x500.jpg",
+      "pro_count": 7851,
+      "average_rating": 4.5,
+      "completed_jobs_on_last_month": 24772
+    },
+    {
+      "id": 142,
+      "service_id": 142,
+      "name": "Evden Eve Nakliye",
+      "long_name": "Evden Eve Nakliyat",
+      "image_url": "https://cdn.armut.com/images/services/0142-evden-eve-nakliyat-thumb.jpg",
+      "pro_count": 5423,
+      "average_rating": 4.9,
+      "completed_jobs_on_last_month": 245675
+    },
+    {
+      "id": 222,
+      "service_id": 222,
+      "name": "Mobilya Montaj",
+      "long_name": "Mobilya Montaj",
+      "image_url": "https://cdn.armut.com/images/services/00222_mobilya_montaj_thumb_875x500.jpg",
+      "pro_count": 1278,
+      "average_rating": 4.6,
+      "completed_jobs_on_last_month": 4564
+    },
+    {
+      "id": 310,
+      "service_id": 310,
+      "name": "Fransızca Özel Ders",
+      "long_name": "Fransızca Özel Ders",
+      "image_url": "https://cdn.armut.com/images/services/00310_fransizca_ozel_ders_thumb_875x500.jpg",
+      "pro_count": 1245,
+      "average_rating": 4.8,
+      "completed_jobs_on_last_month": 24772
+    },
+    {
+      "id": 59,
+      "service_id": 59,
+      "name": "Düğün Organizasyon",
+      "long_name": "Düğün Organizasyon",
+      "image_url": "https://cdn.armut.com/images/services/00059-dugun-organizasyon_thumb_875x500.jpg",
+      "pro_count": 452,
+      "average_rating": 4.4,
+      "completed_jobs_on_last_month": 6845
+    },
+    {
+      "id": 5819,
+      "service_id": 5819,
+      "name": "Evlilik Teklifi Organizasyon",
+      "long_name": "Evlilik Teklifi Organizasyon",
+      "image_url": "https://cdn.armut.com/images/services/05819-evlilik-teklifi-organizasyon_thumb_875x500.jpg",
+      "pro_count": 354,
+      "average_rating": 4.3,
+      "completed_jobs_on_last_month": 245
+    },
+    {
+      "id": 220,
+      "service_id": 220,
+      "name": "Resim Özel Ders",
+      "long_name": "Resim Özel Ders",
+      "image_url": "https://cdn.armut.com/images/services/00220_resim_özel_ders_thumb_875x500.jpg",
+      "pro_count": 123,
+      "average_rating": 4.7,
+      "completed_jobs_on_last_month": 58
+    },
+    {
+      "id": 222,
+      "service_id": 222,
+      "name": "Mobilya Montaj",
+      "long_name": "Mobilya Montaj",
+      "image_url": "https://cdn.armut.com/images/services/00222_mobilya_montaj_thumb_875x500.jpg",
+      "pro_count": 12577,
+      "average_rating": 4.8,
+      "completed_jobs_on_last_month": 3503
+    },
+    {
+      "id": 223,
+      "service_id": 223,
+      "name": "Gelinlik",
+      "long_name": "Gelinlik",
+      "image_url": "https://cdn.armut.com/images/services/00059-dugun-organizasyon_thumb_875x500.jpg",
+      "pro_count": 1,
+      "average_rating": null,
+      "completed_jobs_on_last_month": -1
+    }
+  ]
+}
